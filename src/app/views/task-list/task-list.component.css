@@ -1,0 +1,48 @@
+/* Lista de tareas */
+.task-list {
+    margin-top: 1rem;
+  }
+  
+  .task-item {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-item.completed {
+    background-color: #e0f7e0;
+  }
+  
+  .task-item.pending {
+    background-color: #fff3cd;
+  }
+  
+  .task-item.postponed {
+    background-color: #f0f0f0;
+  }
+  
+  button.edit,
+  button.delete {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  button.delete {
+    background-color: #f44336;
+  }
+  
+  button.edit:hover,
+  button.delete:hover {
+    background-color: darken(#4CAF50, 10%);
+  }
+  

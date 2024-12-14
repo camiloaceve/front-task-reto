@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Lista de Tareas</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Descripción</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let task of tasks; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ task.description }}</td>
+          <td>{{ task.status }}</td>
+          <td>
+            <a [routerLink]="['/tasks', task.id]" class="btn btn-info">Detalles</a>
+            <a [routerLink]="['/tasks/new']" class="btn btn-success">Editar</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,39 @@
+/* Estilo para la vista de detalles de la tarea */
+.task-details {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-details h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .task-details p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .task-details .status {
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .status.completed {
+    background-color: #e0f7e0;
+    color: green;
+  }
+  
+  .status.pending {
+    background-color: #fff3cd;
+    color: #ff9800;
+  }
+  
+  .status.postponed {
+    background-color: #f0f0f0;
+    color: #9e9e9e;
+  }
+  

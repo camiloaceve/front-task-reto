@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>Detalles de la Tarea</h2>
+    <div *ngIf="task">
+      <p><strong>Descripción:</strong> {{ task.description }}</p>
+      <p><strong>Estado:</strong> {{ task.status }}</p>
+      <p><strong>Fecha de creación:</strong> {{ task.createdAt }}</p>
+  
+      <div class="mt-3">
+        <button (click)="goBack()" class="btn btn-primary">Volver</button>
+      </div>
+    </div>
+  </div>
+  

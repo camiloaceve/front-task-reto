@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>{{ isEditMode ? 'Editar Tarea' : 'Nueva Tarea' }}</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="description">Descripción</label>
+        <input type="text" class="form-control" id="description" [(ngModel)]="task.description" name="description" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="status">Estado</label>
+        <select class="form-control" id="status" [(ngModel)]="task.status" name="status" required>
+          <option value="pendiente">Pendiente</option>
+          <option value="completada">Completada</option>
+          <option value="pospuesta">Pospuesta</option>
+        </select>
+      </div>
+  
+      <button type="submit" class="btn btn-primary">{{ isEditMode ? 'Actualizar' : 'Crear' }} Tarea</button>
+    </form>
+  </div>
+  
